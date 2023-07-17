@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'baseFont';
+  src: url('../assets/fonts/Lato-Light.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'boldFont';
+  src: url('../assets/fonts/Lato-Black.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  color: var(--font-color);
+}
+
+h2 {
+  font-family: 'baseFont';
+  color: var(--font-color-light);
+  border-bottom: 2px solid var(--font-color-light);
+}
+
+p {
+  font-family: 'boldFont';
+  font-size: 20px;
+  color: var(--font-color-light);
+}
+
+span {
+  font-family: 'baseFont';
+  color: var(--font-color-light);
+}
+
+:root {
+  --font-color: rgb(66, 57, 46);
+  --font-color-light: rgb(126, 101, 71);
+  --card: rgb(245, 245, 245);
+  --border-color: rgb(66, 57, 46);
+  --background: rgb(228, 222, 208);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'baseFont';
+  background-attachment: fixed;
+  background-size: cover;
+
+  overflow-x: hidden;
+
+  background-color: var(--background);
+}
+
+.headerContent {
+  width: 100vw;
+  height: 300px;
+  background-image: url('../assets/images/backgroundImage2.jpg');
+  white-space: nowrap;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--font-color);
+  border-bottom: 3px solid var(--font-color);
+}
+
+.backgroundImage {
+  width: 100vw;
+}
+
+.logo {
+  position: absolute;
+  bottom: -35px;
+  width: 300px;
+  height: auto;
+}
+
+.logo:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.sticky {
+  position: fixed;
+  top: -180px;
+  z-index: 100;
+}
+
+.stickyLogo {
+  position: fixed;
+  top: 0px;
+  z-index: 100;
+}
+

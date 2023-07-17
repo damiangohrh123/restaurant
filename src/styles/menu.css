@@ -1,0 +1,51 @@
+.menuContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 100px;
+}
+
+.menuTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  white-space: nowrap;
+
+  padding-bottom: 50px;
+}
+
+.menuItems{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-auto-rows: 350px;
+  gap: 50px 20px;
+
+  width: 60vw;
+}
+
+.cardElement {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  background-color: var(--card);
+
+  padding: 20px;
+  border-radius: 0.8em;
+
+  transition: transform 0.1s ease-in-out;
+}
+
+.cardElement img {
+  height: 200px;
+  object-fit: cover;
+}
+
+@media (max-width: 500px) {
+  .menuItems {
+    width: 90vw;
+  }
+}

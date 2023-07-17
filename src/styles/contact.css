@@ -1,0 +1,77 @@
+.contactContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 100px;
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+
+  padding-top: 100px;
+}
+
+.contactRow {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 50px;
+
+  width: 60vw;
+  background-color: var(--card);
+
+  padding: 50px;
+  border-radius: 0.8em;
+}
+
+.contactTextContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactHeader {
+  font-size: 30px;
+}
+
+.contactInfo {
+  font-size: 28px;
+  font-family: 'baseFont';
+}
+
+.contactContainer img {
+  max-width: 300px;
+  max-height: 100%; 
+  object-fit: cover;
+}
+
+.contactContainer span {
+  max-width: 100%;
+}
+
+@media (max-width: 1500px) {
+  .contactRow {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 35px;
+
+    width: 80vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .contactRow {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+
+    width: 90vw;
+  }
+
+  .contactContainer img {
+    margin: auto;
+  }
+}

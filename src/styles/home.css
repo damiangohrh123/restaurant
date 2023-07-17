@@ -1,0 +1,46 @@
+body {
+  font-size: 1.6rem;
+  font-family: 'baseFont';
+  background-attachment: fixed;
+  background-size: cover;
+
+  background-color: var(--background);
+}
+
+.bodyContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+
+  padding-top: 100px;
+}
+
+/* Card */
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  width: 350px;
+  background-color: var(--card);
+
+  padding: 20px;
+  border-radius: 0.8em;
+
+  transition: transform 0.1s ease-in-out;
+}
+
+.card:hover {
+  cursor: pointer;
+
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+
+  transform: scale(1.05);
+}
+
+.cardImage {
+  height: 200px;
+  object-fit: cover;
+}
